@@ -96,7 +96,7 @@ public class AppCouleurPion {
 		
 		System.out.println("\nL'ÉLÉPHANT N'EST PLUS DE COULEUR BLANCHE\n");
 		
-		elephantBlanc.setLaCouleur(null);
+		elephantBlanc.setLaCouleur(noir);
 		
 		if(elephantBlanc.getLaCouleur() == blanc) {
 			System.out.println("8 - L'éléphant est de couleur blanche.\n");
@@ -105,16 +105,23 @@ public class AppCouleurPion {
 			System.out.println("8 - L'éléphant n'est plus de couleur blanche.\n");
 		}
 		
-		// Doit afficher : 8 - L'éléphant n'est plus de couleur blanche.
-		
-		if(blanc.estVide()) {
-			System.out.println("9 - La couleur blanche n'a pas de pions.\n");
+		if(elephantBlanc.getLaCouleur() == noir) {
+			System.out.println("9 - L'éléphant est de couleur noire.\n");
 		}
 		else {
-			System.out.println("9 - La couleur blanche a des pions.\n");
+			System.out.println("9 - L'éléphant n'est plus de couleur noire.\n");
 		}
 		
-		// Doit aficher : 9 - La couleur blanche n'a pas de pions.
+		// Doit afficher : 9 - L'éléphant est plus de couleur noire.
+		
+		if(blanc.estVide()) {
+			System.out.println("10 - La couleur blanche n'a pas de pions.\n");
+		}
+		else {
+			System.out.println("10 - La couleur blanche a des pions.\n");
+		}
+		
+		// Doit aficher : 10 - La couleur blanche n'a pas de pions.
 	
 	}
 	
