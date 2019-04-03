@@ -109,10 +109,10 @@ public class AppCouleurPion {
 			System.out.println("9 - L'éléphant est de couleur noire.\n");
 		}
 		else {
-			System.out.println("9 - L'éléphant n'est plus de couleur noire.\n");
+			System.out.println("9 - L'éléphant n'est pas de couleur noire.\n");
 		}
 		
-		// Doit afficher : 9 - L'éléphant est plus de couleur noire.
+		// Doit afficher : 9 - L'éléphant est de couleur noire.
 		
 		if(blanc.estVide()) {
 			System.out.println("10 - La couleur blanche n'a pas de pions.\n");
